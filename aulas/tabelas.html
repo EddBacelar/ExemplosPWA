@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exemplo de Tabelas em HTML</title>
+    <link rel="icon" href="../images/icon.png">
+    <link href="../css/prism.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div id="floting">
+      <h3><a href="../index.html#back"><u>VOLTAR </u></a><h3>
+    </div>
+
+    <div id="direita">
+      <h3 class="dif"> Código HTML </h3>
+      <pre><code class="language-html">&lt;!-- Fronteira e Fundo --&gt;
+&lt;table border="2" bgcolor="#efefef"&gt;
+  &lt;tr&gt;
+    &lt;th width = "150"&gt; &lt;/th&gt;
+    &lt;th&gt; Retirado &lt;/th&gt;
+    &lt;th&gt; Crédito &lt;/th&gt;
+    &lt;th width = "150" bgcolor = "# cccccc"&gt; Saldo &lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt; Janeiro &lt;/th&gt;
+    &lt;td&gt; 250,00 &lt;/td&gt;
+    &lt;td&gt; 660,50 &lt;/td&gt;
+    &lt;td bgcolor = "# cccccc"&gt; 410,50 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt; Fevereiro &lt;/th&gt;
+    &lt;td&gt; 135,55 &lt;/td&gt;
+    &lt;td&gt; 895,20 &lt;/td&gt;
+    &lt;td bgcolor = "# cccccc"&gt; 1170.15 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;!-- Largura e Espaçamento --&gt;
+&lt;style type="text/css"&gt;
+  th, td {background-color: #dddddd;}
+&lt;/style&gt;
+&lt;table width="400" cellpadding="10" cellspacing="5"&gt;
+  &lt;tr&gt;
+    &lt;th width = "150"&gt; &lt;/th&gt;
+    &lt;th&gt; Retirado &lt;/th&gt;
+    &lt;th&gt; Crédito &lt;/th&gt;
+    &lt;th width = "150"&gt; Saldo &lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt; Janeiro &lt;/th&gt;
+    &lt;td&gt; 250,00 &lt;/td&gt;
+    &lt;td&gt; 660,50 &lt;/td&gt;
+    &lt;td&gt; 410,50 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt; Fevereiro &lt;/th&gt;
+    &lt;td&gt; 135,55 &lt;/td&gt;
+    &lt;td&gt; 895,20 &lt;/td&gt;
+    &lt;td&gt; 1170,15 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;!-- Spanning Rows --&gt;
+&lt;style type="text/css"&gt;
+  table {border: none;}
+  th, td {border: none;
+          background-color: #dddddd;
+          padding: 5px;
+          width: 100px;}
+&lt;/style&gt;
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt; &lt;/th&gt;
+    &lt;th&gt; ABC &lt;/th&gt;
+    &lt;th&gt; BBC &lt;/th&gt;
+    &lt;th&gt; CNN &lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt; 18h - 19h &lt;/th&gt;
+    &lt;td rowspan = "2"&gt; Filme &lt;/td&gt;
+    &lt;td&gt; Comédia &lt;/td&gt;
+    &lt;td&gt; Notícias &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt; 19h - 20h &lt;/th&gt;
+    &lt;td&gt; Esportes &lt;/td&gt;
+    &lt;td&gt; Atualidades &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;!-- Spanning Columns --&gt;
+&lt;style type="text/css"&gt;
+table {border: none;}
+th, td {border: none;
+        background-color: #dddddd;
+        padding: 5px;
+        width: 100px;}
+&lt;/style&gt;
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;&lt;/th&gt;
+    &lt;th&gt; 9h &lt;/th&gt;
+    &lt;th&gt; 10h &lt;/th&gt;
+    &lt;th&gt; 11h &lt;/th&gt;
+    &lt;th&gt; 12h &lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt; Segunda-feira &lt;/th&gt;
+    &lt;td colspan = "2"&gt; Geografia &lt;/td&gt;
+    &lt;td&gt; Matemática &lt;/td&gt;
+    &lt;td&gt; Arte &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt; Terça-feira &lt;/th&gt;
+    &lt;td colspan = "3"&gt; Academia &lt;/td&gt;
+    &lt;td&gt; Home Ec &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;!-- Títulos de Tabela --&gt;
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;&lt;/th&gt;
+    &lt;th scope = "col"&gt; Sábado &lt;/th&gt;
+    &lt;th scope = "col"&gt; Domingo &lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th scope = "row"&gt; Ingressos vendidos: &lt;/th&gt;
+    &lt;td&gt; 120 &lt;/td&gt;
+    &lt;td&gt; 135 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th scope = "row"&gt; Vendas totais: &lt;/th&gt;
+    &lt;td&gt; $ 600 &lt;/td&gt;
+    &lt;td&gt; $ 675 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;!-- Estrutura Básica da Tabela --&gt;
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;15&lt;/td&gt;
+    &lt;td&gt;15&lt;/td&gt;
+    &lt;td&gt;30&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;45&lt;/td&gt;
+    &lt;td&gt;60&lt;/td&gt;
+    &lt;td&gt;45&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;60&lt;/td&gt;
+    &lt;td&gt;90&lt;/td&gt;
+    &lt;td&gt;90&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;!-- Tabelas Longas --&gt;
+&lt;style type="text/css"&gt;
+  table {border: none;}
+  thead th {border-bottom: 2px solid #444444;
+          width: 120px;}
+  tfoot td {border-top: 1px solid #444444;}
+&lt;/style&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt; Data &lt;/th&gt;&lt;th&gt; Renda &lt;/th&gt;&lt;th&gt; Despesas &lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;th&gt; 1º de janeiro &lt;/th&gt;&lt;td&gt; 250 &lt;/td&gt;&lt;td&gt; 36 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 2º de janeiro &lt;/th&gt;&lt;td&gt; 285 &lt;/td&gt;&lt;td&gt; 48 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 3º de janeiro &lt;/th&gt;&lt;td&gt; 260 &lt;/td&gt;&lt;td&gt; 42 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 4º de janeiro &lt;/th&gt;&lt;td&gt; 290 &lt;/td&gt;&lt;td&gt; 38 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 5º de janeiro &lt;/th&gt;&lt;td&gt; 310 &lt;/td&gt;&lt;td&gt; 115 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 6º de janeiro &lt;/th&gt;&lt;td&gt; 168 &lt;/td&gt;&lt;td&gt; 14 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 7º de janeiro &lt;/th&gt;&lt;td&gt; 226 &lt;/td&gt;&lt;td&gt; 20 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 8º de janeiro &lt;/th&gt;&lt;td&gt; 253 &lt;/td&gt;&lt;td&gt; 37 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 9º de janeiro &lt;/th&gt;&lt;td&gt; 294 &lt;/td&gt;&lt;td&gt; 33 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 10º de janeiro &lt;/th&gt;&lt;td&gt; 216 &lt;/td&gt;&lt;td&gt; 46 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 11º de janeiro &lt;/th&gt;&lt;td&gt; 244 &lt;/td&gt;&lt;td&gt; 29 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 12º de janeiro &lt;/th&gt;&lt;td&gt; 297 &lt;/td&gt;&lt;td&gt; 32 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 13º de janeiro &lt;/th&gt;&lt;td&gt; 328 &lt;/td&gt;&lt;td&gt; 86 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 14º de janeiro &lt;/th&gt;&lt;td&gt; 215 &lt;/td&gt;&lt;td&gt; 38 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 15º de janeiro &lt;/th&gt;&lt;td&gt; 254 &lt;/td&gt;&lt;td&gt; 30 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 16º de janeiro &lt;/th&gt;&lt;td&gt; 256 &lt;/td&gt;&lt;td&gt; 27 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 17º de janeiro &lt;/th&gt;&lt;td&gt; 311 &lt;/td&gt;&lt;td&gt; 68 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 18º de janeiro &lt;/th&gt;&lt;td&gt; 212 &lt;/td&gt;&lt;td&gt; 39 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 19º de janeiro &lt;/th&gt;&lt;td&gt; 234 &lt;/td&gt;&lt;td&gt; 36 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 20º de janeiro &lt;/th&gt;&lt;td&gt; 221 &lt;/td&gt;&lt;td&gt; 43 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 21º de janeiro &lt;/th&gt;&lt;td&gt; 259 &lt;/td&gt;&lt;td&gt; 38 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 22º de janeiro &lt;/th&gt;&lt;td&gt; 246 &lt;/td&gt;&lt;td&gt; 31 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 23º de janeiro &lt;/th&gt;&lt;td&gt; 248 &lt;/td&gt;&lt;td&gt; 17 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 24º de janeiro &lt;/th&gt;&lt;td&gt; 229 &lt;/td&gt;&lt;td&gt; 45 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 25º de janeiro &lt;/th&gt;&lt;td&gt; 263 &lt;/td&gt;&lt;td&gt; 34 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 26º de janeiro &lt;/th&gt;&lt;td&gt; 258 &lt;/td&gt;&lt;td&gt; 41 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 27º de janeiro &lt;/th&gt;&lt;td&gt; 283 &lt;/td&gt;&lt;td&gt; 22 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 28º de janeiro &lt;/th&gt;&lt;td&gt; 256 &lt;/td&gt;&lt;td&gt; 30 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 29º de janeiro &lt;/th&gt;&lt;td&gt; 278 &lt;/td&gt;&lt;td&gt; 47 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 30º de janeiro &lt;/th&gt;&lt;td&gt; 251 &lt;/td&gt;&lt;td&gt; 15 &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt; 31º de janeiro &lt;/th&gt;&lt;td&gt; 129 &lt;/td&gt;&lt;td&gt; 64 &lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;&lt;td&gt; Total &lt;/td&gt;&lt;td&gt; 7824 &lt;/td&gt;&lt;td&gt; 1241 &lt;/td&gt;&lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+    </div>
+
+    <div id="esquerda">
+      <h3 class="dif"> Resultado </h3>
+      <div class="coluna">
+        <hr class="hr-text" data-content="Fronteira e Fundo">
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+          <table border="2" bgcolor="#efefef">
+            <tr>
+             <th width = "150"> </th>
+             <th> Retirado </th>
+             <th> Crédito </th>
+             <th width = "150" bgcolor = "# cccccc"> Saldo </th>
+            </tr>
+            <tr>
+             <th> Janeiro </th>
+             <td> 250,00 </td>
+             <td> 660,50 </td>
+             <td bgcolor = "# cccccc"> 410,50 </td>
+            </tr>
+            <tr>
+             <th> Fevereiro </th>
+             <td> 135,55 </td>
+             <td> 895,20 </td>
+             <td bgcolor = "# cccccc"> 1170.15 </td>
+            </tr>
+      		</table>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+        <hr class="hr-text" data-content="Largura e Espaçamento">
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+          <style type="text/css">
+            table{margin-left: auto; margin-right: auto;}
+            th.id2, td.id2 {background-color: #dddddd;}
+          </style>
+          <table width="400" cellpadding="10" cellspacing="5">
+            <tr class="id2">
+              <th width = "150" class="id2"> </th>
+              <th class="id2"> Retirado </th>
+              <th class="id2"> Crédito </th>
+              <th width = "150" class="id2"> Saldo </th>
+            </tr>
+            <tr class="id2">
+              <th class="id2"> Janeiro </th>
+              <td class="id2"> 250,00 </td>
+              <td class="id2"> 660,50 </td>
+              <td class="id2"> 410,50 </td>
+            </tr>
+            <tr class="id2">
+              <th class="id2"> Fevereiro </th>
+              <td class="id2"> 135,55 </td>
+              <td class="id2"> 895,20 </td>
+              <td class="id2"> 1170,15 </td>
+            </tr>
+          </table>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+        <hr class="hr-text" data-content="Spanning Rows">
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+          <style type="text/css">
+      			table.id3 {border: none;
+              margin-left: auto;
+              margin-right: auto;}
+      			th.id3, td.id3 {
+      				border: none;
+      				background-color: #dddddd;
+      				padding: 5px;
+      				width: 100px;}
+      		</style>
+      		<table class="id3">
+            <tr class="id3">
+             <th class="id3"> </th>
+             <th class="id3"> ABC </th>
+             <th class="id3"> BBC </th>
+             <th class="id3"> CNN </th>
+            </tr>
+            <tr class="id3">
+             <th class="id3"> 18h - 19h </th>
+             <td rowspan = "2" class="id3"> Filme </td>
+             <td class="id3"> Comédia </td>
+             <td class="id3"> Notícias </td>
+            </tr>
+             <tr class="id3">
+             <th class="id3"> 19h - 20h </th>
+             <td class="id3"> Esportes </td>
+             <td class="id3"> Atualidades </td>
+            </tr>
+      		</table>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+        <hr class="hr-text" data-content="Spanning Columns">
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+          <style type="text/css">
+      			table.id4 {border: none;}
+      			th.id4, td.id4 {
+      				border: none;
+      				background-color: #dddddd;
+      				padding: 5px;
+      				width: 100px;}
+      		</style>
+      		<table class="id4">
+      			<tr class="id4">
+             <th class="id4"></th>
+             <th class="id4"> 9h </th>
+             <th class="id4"> 10h </th>
+             <th class="id4"> 11h </th>
+             <th class="id4"> 12h </th>
+            </tr>
+            <tr class="id4">
+             <th class="id4"> Segunda-feira </th>
+             <td colspan = "2" class="id4"> Geografia </td>
+             <td class="id4"> Matemática </td>
+             <td class="id4"> Arte </td>
+            </tr>
+            <tr class="id4">
+             <th class="id4"> Terça-feira </th>
+             <td colspan = "3" class="id4"> Academia </td>
+             <td class="id4"> Home Ec </td>
+      			</tr>
+      		</table>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+        <hr class="hr-text" data-content="Títulos de Tabela">
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+          <table>
+      			<tr>
+      			 <th></th>
+             <th scope = "col"> Sábado </th>
+             <th scope = "col"> Domingo </th>
+            </tr>
+            <tr>
+             <th scope = "row"> Ingressos vendidos: </th>
+             <td> 120 </td>
+             <td> 135 </td>
+            </tr>
+            <tr>
+             <th scope = "row"> Vendas totais: </th>
+             <td> $ 600 </td>
+             <td> $ 675 </td>
+      			</tr>
+      		</table>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+        <hr class="hr-text" data-content="Estrutura Básica da Tabela">
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+          <table>
+      			<tr>
+      			 <td>15</td>
+      			 <td>15</td>
+      			 <td>30</td>
+      			</tr>
+      			<tr>
+      			 <td>45</td>
+      			 <td>60</td>
+      			 <td>45</td>
+      			</tr>
+      			<tr>
+      			 <td>60</td>
+      			 <td>90</td>
+      			 <td>90</td>
+      			</tr>
+      		</table>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+        <hr class="hr-text" data-content="Tabelas Longas">
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+          <style type="text/css">
+        	  table.id6 {border: none;
+              text-align: center;}
+        		thead th.id6 {border-bottom: 2px solid #444444;
+        			width: 120px;}
+        		tfoot td.id6 {border-top: 1px solid #444444;}
+        	</style>
+          <table class="id6">
+      			<thead>
+              <tr>
+               <th class="id6"> Data </th>
+               <th class="id6"> Renda </th>
+               <th class="id6"> Despesas </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+               <th> 1º de janeiro </th>
+               <td> 250 </td>
+               <td> 36 </td>
+              </tr>
+              <tr>
+               <th> 2º de janeiro </th>
+               <td> 285 </td>
+               <td> 48 </td>
+              </tr>
+              <tr>
+               <th> 3º de janeiro </th>
+               <td> 260 </td>
+               <td> 42 </td>
+              </tr>
+              <tr>
+               <th> 4º de janeiro </th>
+               <td> 290 </td>
+               <td> 38 </td>
+              </tr>
+              <tr>
+               <th> 5º de janeiro </th>
+               <td> 310 </td>
+               <td> 115 </td>
+              </tr>
+              <tr>
+               <th> 6º de janeiro </th>
+               <td> 168 </td>
+               <td> 14 </td>
+              </tr>
+              <tr>
+               <th> 7º de janeiro </th>
+               <td> 226 </td>
+               <td> 20 </td>
+              </tr>
+              <tr>
+               <th> 8º de janeiro </th>
+               <td> 253 </td>
+               <td> 37 </td>
+              </tr>
+              <tr>
+               <th> 9º de janeiro </th>
+               <td> 294 </td>
+               <td> 33 </td>
+              </tr>
+              <tr>
+               <th> 10º de janeiro </th>
+               <td> 216 </td>
+               <td> 46 </td>
+              </tr>
+              <tr>
+               <th> 11º de janeiro </th>
+               <td> 244 </td>
+               <td> 29 </td>
+              </tr>
+              <tr>
+               <th> 12º de janeiro </th>
+               <td> 297 </td>
+               <td> 32 </td>
+              </tr>
+              <tr>
+               <th> 13º de janeiro </th>
+               <td> 328 </td>
+               <td> 86 </td>
+              </tr>
+              <tr>
+               <th> 14º de janeiro </th>
+               <td> 215 </td>
+               <td> 38 </td>
+              </tr>
+              <tr>
+               <th> 15º de janeiro </th>
+               <td> 254 </td>
+               <td> 30 </td>
+              </tr>
+              <tr>
+               <th> 16º de janeiro </th>
+               <td> 256 </td>
+               <td> 27 </td>
+              </tr>
+              <tr>
+               <th> 17º de janeiro </th>
+               <td> 311 </td>
+               <td> 68 </td>
+              </tr>
+              <tr>
+               <th> 18º de janeiro </th>
+               <td> 212 </td>
+               <td> 39 </td>
+              </tr>
+              <tr>
+               <th> 19º de janeiro </th>
+               <td> 234 </td>
+               <td> 36 </td>
+              </tr>
+              <tr>
+               <th> 20º de janeiro </th>
+               <td> 221 </td>
+               <td> 43 </td>
+              </tr>
+              <tr>
+               <th> 21º de janeiro </th>
+               <td> 259 </td>
+               <td> 38 </td>
+              </tr>
+              <tr>
+               <th> 22º de janeiro </th>
+               <td> 246 </td>
+               <td> 31 </td>
+              </tr>
+              <tr>
+               <th> 23º de janeiro </th>
+               <td> 248 </td>
+               <td> 17 </td>
+              </tr>
+              <tr>
+               <th> 24º de janeiro </th>
+               <td> 229 </td>
+               <td> 45 </td>
+              </tr>
+              <tr>
+               <th> 25º de janeiro </th>
+               <td> 263 </td>
+               <td> 34 </td>
+              </tr>
+              <tr>
+               <th> 26º de janeiro </th>
+               <td> 258 </td>
+               <td> 41 </td>
+              </tr>
+              <tr>
+               <th> 27º de janeiro </th>
+               <td> 283 </td>
+               <td> 22 </td>
+              </tr>
+              <tr>
+               <th> 28º de janeiro </th>
+               <td> 256 </td>
+               <td> 30 </td>
+              </tr>
+              <tr>
+               <th> 29º de janeiro </th>
+               <td> 278 </td>
+               <td> 47 </td>
+              </tr>
+              <tr>
+               <th> 30º de janeiro </th>
+               <td> 251 </td>
+               <td> 15 </td>
+              </tr>
+              <tr>
+               <th> 31º de janeiro </th>
+               <td> 129 </td>
+               <td> 64 </td>
+              </tr>
+      			</tbody>
+      			<tfoot>
+      				<tr>
+      				 <td class="id6">Total</td>
+      				 <td class="id6">7824</td>
+      				 <td class="id6">1241</td>
+      				</tr>
+      			</tfoot>
+      		</table>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      </div>
+    </div>
+
+    <script src="https://rawcdn.githack.com/EddBacelar/LinksCodes/98866f6551bd115f0fc855b7dcb9fdc15206c9a4/prism.js"></script>
+  </body>
+</html>

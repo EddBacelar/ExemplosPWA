@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exemplo de Links em HTML</title>
+    <link rel="icon" href="../images/icon.png">
+    <link href="../css/prism.css" rel="stylesheet">
+  </head>
+  <body id="top">
+
+    <div id="floting">
+      <h3><a href="../index.html#back"><u>VOLTAR </u></a><h3>
+    </div>
+
+    <div id="direita">
+      <h3 class="dif"> Código HTML </h3>
+      <pre><code class="language-html">&lt;!-- Link Padrão --&gt;
+&lt;a href="http://www.imdb.com"&gt;IMDB&lt;/a&gt;
+
+&lt;!-- Links para outros sites --&gt;
+&lt;p&gt; Resenhas de filmes:
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://www.empireonline.com"&gt;Empire Online&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.metacritic.com"&gt;Metacritic&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.rottentomatoes.com"&gt;Rotten Tomatoes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.variety.com"&gt;Variety&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;!-- Links para outras páginas no mesmo site --&gt;
+&lt;p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Sobre&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Filmes&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Contato&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;!-- Links de e-mail --&gt;
+&lt;a href="mailto:jon@example.org"&gt;Email do Jon&lt;/a&gt;
+
+&lt;!-- Abrindo links em uma nova janela --&gt;
+&lt;p&gt;
+&lt;a href="http://www.imdb.com" target="_blank"&gt; IMDB &lt;/a&gt;
+&lt;/p&gt;
+
+&lt;!-- Vinculando a uma parte específica de uma página --&gt;
+&lt;h1 id = "top"&gt;Termos de produção de filmes&lt;/h1&gt;
+  &lt;a href="#arc_shot"&gt;Arc Shot&lt;/a&gt;&lt;br/&gt;
+  &lt;a href="#interlude"&gt;Interlude&lt;/a&gt;&lt;br/&gt;
+  &lt;a href="#prologue"&gt;Prólogo&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;h2 id = "arc_shot"&gt;Arc Shot&lt;/h2&gt;
+  &lt;p&gt;Uma cena em que o assunto é fotografado por uma câmera
+     envolvente ou em movimento&lt;/p&gt;
+&lt;h2 id = "interlude"&gt;Interlude&lt;/h2&gt;
+  &lt;p&gt;Uma cena ou sequência de filme breve e intermediária que
+     aparece dentro de um filme&lt;/p&gt;
+&lt;h2 id = "prologue"&gt;Prólogo&lt;/h2&gt;
+  &lt;p&gt;Um discurso, prefácio, introdução ou breve cena que
+     antecede a ação principal&lt;/p&gt;
+&lt;p&gt;&lt;a href="#top"&gt;Inicio&lt;/a&gt;&lt;/p&gt;
+
+
+
+
+</code></pre>
+    </div>
+
+    <div id="esquerda">
+      <h3 class="dif"> Resultado </h3>
+      <div class="coluna">
+        <hr class = "hr-text" data-content = "Link Padrão">
+          <a href="http://www.imdb.com"> IMDB </a>
+          <br/><br/>
+        <hr class = "hr-text" data-content = "Links para outros sites">
+          <p> Resenhas de filmes:
+            <ul>
+            <li> <a href="http://www.empireonline.com"> Empire Online </a> </li>
+            <li> <a href="http://www.metacritic.com"> Metacritic </a> </li>
+            <li> <a href="http://www.rottentomatoes.com"> Rotten Tomatoes </a> </li>
+            <li> <a href="http://www.variety.com"> Variety </a> </li>
+            </ul>
+          </p>
+          <br/><br/><br/><br/>
+        <hr class = "hr-text" data-content = "Links para outras páginas no mesmo site">
+          <p>
+            <ul>
+              <li> <a href="#"> Home </a> </li>
+              <li> <a href="#"> Sobre </a> </li>
+              <li> <a href="#"> Filmes </a> </li>
+              <li> <a href="#"> Contato </a> </li>
+            </ul>
+          </p>
+          <br/><br/><br/><br/><br/>
+        <hr class = "hr-text" data-content = "Links de e-mail">
+          <a href="mailto:jon@example.org"> Email do Jon </a>
+          <br/><br/><br/>
+        <hr class = "hr-text" data-content = "Abrindo links em uma nova janela">
+          <p>
+            <a href="http://www.imdb.com" target="_blank"> IMDB </a>
+          </p>
+          <br/>
+        <hr class = "hr-text" data-content = "Vinculando a uma parte específica de uma página">
+          <h1 id = "top"> Termos de produção de filmes </h1>
+            <a href="#arc_shot"> Arc Shot </a><br/>
+            <a href="#interlude"> Interlude </a><br/>
+            <a href="#prologue"> Prólogo </a><br/><br/>
+          <h2 id = "arc_shot"> Arc Shot </h2>
+            <p> Uma cena em que o assunto é fotografado por uma câmera envolvente ou em movimento </p>
+          <h2 id = "interlude"> Interlude </h2>
+            <p> Uma cena ou sequência de filme breve e intermediária que aparece dentro de um filme </p>
+          <h2 id = "prologue"> Prólogo </h2>
+            <p> Um discurso, prefácio, introdução ou breve cena que antecede a ação principal</p>
+          <p><a href="#top"> Inicio </a></p>
+      </div>
+    </div>
+
+    <script src="https://rawcdn.githack.com/EddBacelar/LinksCodes/98866f6551bd115f0fc855b7dcb9fdc15206c9a4/prism.js"></script>
+  </body>
+</html>

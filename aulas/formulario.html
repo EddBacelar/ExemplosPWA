@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exemplo de Formulários</title>
+    <link rel="icon" href="../images/icon.png">
+    <link href="../css/prism.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div id="floting">
+      <h3><a href="../index.html#back"><u>VOLTAR </u></a><h3>
+    </div>
+
+    <div id="direita">
+      <h3 class="dif"> Código HTML </h3>
+      <pre><code class="language-html">&lt;!-- Estrutura do Formulário --&gt;
+&lt;form action="#" method="get"&gt;
+ &lt;p&gt;É aqui que os controles do formulário serão exibidos.&lt;/p&gt;
+&lt;/form&gt;
+
+&lt;!-- Input de Texto --&gt;
+&lt;form action="#"&gt;
+ &lt;p&gt;Nome de usuário:
+  &lt;input type="text" name="username" size="15" maxlength="30"/&gt;
+ &lt;/p&gt;
+&lt;/form&gt;
+
+&lt;!-- Input de Senha --&gt;
+&lt;form action="#"&gt;
+ &lt;p&gt;Nome de usuário:
+  &lt;input type="text" name="username" size="15" maxlength="30"/&gt;
+ &lt;/p&gt;
+ &lt;p&gt;Senha:
+  &lt;input type="password" name="senha" size="15" maxlength="30"/&gt;
+ &lt;/p&gt;
+&lt;/form&gt;
+
+&lt;!-- Área de Texto --&gt;
+&lt;form action="#"&gt;
+ &lt;p&gt;O que você achou do show?&lt;/p&gt;
+ &lt;textarea name="comments" cols="20" rows="4"&gt;
+    Insira seus comentários...
+ &lt;/textarea&gt;
+&lt;/form&gt;
+
+&lt;!-- Botão 'Radio' --&gt;
+&lt;form action="#"&gt;
+ &lt;p&gt;Selecione seu gênero favorito:
+  &lt;br/&gt;
+  &lt;input type="radio" name="genre" value="rock" checked /&gt; Rock
+  &lt;input type="radio" name="genre" value="pop"/&gt; Pop
+  &lt;input type="radio" name="genre" value="jazz"/&gt; Jazz
+ &lt;/p&gt;
+&lt;/form&gt;
+
+&lt;!-- Checkbox --&gt;
+&lt;form action="#"&gt;
+ &lt;p&gt;Selecione seu(s) serviço(s) de música favorito(s):
+ &lt;br/&gt;
+ &lt;input type="checkbox" name="service" value="itu" checked/&gt; iTunes
+ &lt;input type="checkbox" name="service" value="lafm"/&gt; Last.fm
+ &lt;input type="checkbox" name="service" value="spot"/&gt; Spotify
+ &lt;/p&gt;
+&lt;/form&gt;
+
+&lt;!-- Caixa de Lista Suspensa --&gt;
+&lt;form action="#"&gt;
+ &lt;p&gt;Em qual dispositivo você ouve música?&lt;/p&gt;
+ &lt;select name="devices"&gt;
+  &lt;option value="ipod"&gt; iPod &lt;/option&gt;
+  &lt;option value="radio"&gt; Rádio &lt;/option&gt;
+  &lt;option value="computer"&gt; Computador &lt;/option&gt;
+ &lt;/select&gt;
+&lt;/form&gt;
+
+&lt;!-- Caixa de Seleção Multipla --&gt;
+&lt;form action="#"&gt;
+ &lt;p&gt;Você toca algum dos instrumentos a seguir?&lt;/p&gt;
+ &lt;select name="instrumentos" size="3" múltiplo="múltiplo"&gt;
+  &lt;option value="guitar" selected="selected"&gt; Guitar &lt;/option&gt;
+  &lt;option value="drums"&gt; Bateria &lt;/option&gt;
+  &lt;option value="keyboard" selected="selected"&gt; Teclado &lt;/option&gt;
+  &lt;option value="bass"&gt; Baixo &lt;/option&gt;
+ &lt;/select&gt;
+&lt;/form&gt;
+
+&lt;!-- Caixa Input de Arquivos --&gt;
+&lt;form action="#" method="post"&gt;
+ &lt;p&gt;Envie sua música no formato MP3:&lt;/p&gt;
+ &lt;input type="file" name="user-song" /&gt;&lt;br/&gt;&lt;br/&gt;
+ &lt;input type="submit" value="Upload" /&gt;
+&lt;/form&gt;
+
+&lt;!-- Botão Enviar --&gt;
+&lt;form action="#"&gt;
+ &lt;p&gt;Inscreva-se em nossa lista de e-mail:
+  &lt;input type="text" name="email" /&gt;
+  &lt;input type="submit" name="subscribe" value="Subscribe" /&gt;
+ &lt;/p&gt;
+&lt;/form&gt;
+
+&lt;!-- Botão com Imagem --&gt;
+&lt;form action="#"&gt;
+ &lt;p&gt;Inscreva-se em nossa lista de e-mail:&lt;/p&gt;
+ &lt;input type="text" name="email" /&gt;
+ &lt;input type="image" src="images/bnt.jpg" width="100" height="20"/&gt;
+&lt;/form&gt;
+
+&lt;!-- Botão e Controles Ocultos --&gt;
+&lt;form action="#"&gt;
+ &lt;button&gt;
+  &lt;img src="images/add.gif" alt="add" width="10" height="10"/&gt; Adicionar
+ &lt;/button&gt;
+ &lt;input type="hidden" name="bookmark" value="lyrics"/&gt;
+&lt;/form&gt;
+
+&lt;!-- Rotulando Controles do Formulário --&gt;
+&lt;form action="#"&gt;
+ &lt;label&gt; Idade: &lt;input type="text" name="age"/&gt;&lt;/label&gt;
+ &lt;br/&gt;
+ Gênero:
+ &lt;input id="female" type="radio" name="gender" value="f"&gt;
+ &lt;label for="female"&gt; Feminino &lt;/label&gt;
+ &lt;input id="male" type="radio" name="gender" value="m"&gt;
+ &lt;label for="male"&gt; Masculino &lt;/label&gt;
+&lt;/form&gt;
+
+&lt;!-- Elementos do Formulário de Agrupamento --&gt;
+&lt;form action="#"&gt;
+ &lt;fieldset&gt;
+  &lt;legend&gt; Detalhes de contato &lt;/legend&gt;
+  &lt;label&gt; Email: &lt;br/&gt;&lt;input type="text" name="email"/&gt;&lt;/label&gt;&lt;br/&gt;
+  &lt;label&gt; Celular: &lt;br/&gt;&lt;input type="text" name="mobile"/&gt;&lt;/label&gt;&lt;br/&gt;
+  &lt;label&gt; Telefone: &lt;br/&gt;&lt;input type="text" name="telephone"/&gt;&lt;/label&gt;
+&lt;/fieldset&gt;
+&lt;/form&gt;
+
+&lt;!-- Validação do Formulário com HTML5 --&gt;
+&lt;form action="#" method="post"&gt;
+ &lt;label for="username"&gt; Nome de usuário: &lt;/label&gt;
+ &lt;input type="text" name="username" id="username" required="required"/&gt;
+ &lt;br/&gt;&lt;br/&gt;
+ &lt;label for="password"&gt; Senha: &lt;/label&gt;
+ &lt;input type="password" name="pwd" id="pwd" required="required"/&gt;
+ &lt;br/&gt;&lt;br/&gt;
+ &lt;input type="submit" value="Enviar"/&gt;
+&lt;/form&gt;
+
+&lt;!-- Input de Data em HTML5 --&gt;
+&lt;form action="#" method="post"&gt;
+ &lt;label for="username"&gt; Data de partida: &lt;/label&gt;
+ &lt;input type="date" name="depart"/&gt;
+ &lt;input type="submit" value="Enviar"/&gt;
+&lt;/form&gt;
+
+&lt;!-- Input de Email em HTML5 --&gt;
+&lt;form action="#"&gt;
+ &lt;p&gt;Insira seu endereço de e-mail:
+  &lt;input type="email" name="email"/&gt;
+  &lt;input type="submit" value="Enviar"/&gt;
+ &lt;/p&gt;
+&lt;/form&gt;
+
+&lt;!-- URL Input em HTML5 --&gt;
+&lt;form action="#"&gt;
+ &lt;p&gt;Insira o endereço do seu site:
+  &lt;input type="url" name="website"/&gt;
+  &lt;input type="submit" value="Enviar"/&gt;
+ &lt;/p&gt;
+&lt;/form&gt;
+
+&lt;!-- Search Input em HTML5 --&gt;
+&lt;form action="#"&gt;
+ &lt;p&gt;Pesquisar:
+  &lt;input type="search" name="search"/&gt;
+  &lt;input type="submit" value="Buscar"/&gt;
+ &lt;/p&gt;
+&lt;/form&gt;
+
+&lt;!-- Placeholder em HTML5 --&gt;
+&lt;form action="#"&gt;
+ Pesquisar:
+ &lt;input type="search" name="search" placeholder="Digite a pesquisa"/&gt;
+ &lt;input type="submit" value="Buscar"/&gt;
+&lt;/form&gt;&lt;br/&gt;
+</code></pre>
+    </div>
+
+    <div id="esquerda">
+      <h3 class="dif"> Resultado </h3>
+      <div class="coluna">
+
+        <hr class="hr-text" data-content="Estrutura do Formulário">
+        <form action="#" method="get">
+          <p>É aqui que os controles do formulário serão exibidos.</p>
+        </form>
+<br/><br/><br/>
+        <hr class = "hr-text" data-content = "Input de Texto">
+<br/>
+        <form action = "#">
+          <p>Nome de usuário:
+            <input type = "text" name = "username" size = "15" maxlength = "30" />
+          </p>
+        </form>
+<br/><br/>
+
+        <hr class = "hr-text" data-content = "Input de Senha">
+<br/><br/><br/>
+        <form action = "#">
+          <p>Nome de usuário:
+            <input type = "text" name = "username" size = "15" maxlength = "30" />
+          </p>
+          <p>Senha:
+            <input type = "password" name = "senha" size = "15" maxlength = "30" />
+          </p>
+        </form>
+<br/><br/><br/>
+
+        <hr class = "hr-text" data-content = "Área de Texto">
+<br/>
+        <form action = "#">
+          <p>O que você achou do show?</p>
+          <textarea name = "comments" cols = "20" rows = "4">Insira seus comentários...</textarea>
+        </form>
+<br/>
+
+        <hr class = "hr-text" data-content = "Botão 'Radio'">
+<br/><br/><br/>
+        <form action = "#">
+          <p>Selecione seu gênero favorito:
+            <br/>
+            <input type = "radio" name = "genre" value = "rock" checked /> Rock
+            <input type = "radio" name = "genre" value = "pop" /> Pop
+            <input type = "radio" name = "genre" value = "jazz" /> Jazz
+          </p>
+        </form>
+<br/><br/><br/><br/>
+
+        <hr class = "hr-text" data-content = "Checkbox">
+<br/><br/><br/><br/>
+        <form action = "#">
+          <p>Selecione seu(s) serviço(s) de música favorito(s):
+            <br/>
+            <input type = "checkbox" name = "service" value = "itunes" checked /> iTunes
+            <input type = "checkbox" name = "service" value = "lastfm" /> Last.fm
+            <input type = "checkbox" name = "service" value = "spotify" /> Spotify
+          </p>
+        </form>
+<br/><br/><br/><br/>
+
+        <hr class = "hr-text" data-content = "Caixa de Lista Suspensa">
+<br/><br/><br/>
+        <form action = "#">
+          <p>Em qual dispositivo você ouve música?</p>
+          <select name="devices">
+            <option value = "ipod"> iPod </option>
+            <option value = "radio"> Rádio </option>
+            <option value = "computer"> Computador </option>
+          </select>
+        </form>
+<br/><br/><br/><br/>
+
+        <hr class = "hr-text" data-content = "Caixa de Seleção Multipla">
+<br/><br/><br/>
+        <form action = "#">
+          <p>Você toca algum dos instrumentos a seguir?</p>
+          <select name = "instrumentos" size = "3" múltiplo = "múltiplo">
+            <option value = "guitar" selected = "selected"> Guitar </option>
+            <option value = "drums"> Bateria </option>
+            <option value = "keyboard" selected = "selected"> Teclado </option>
+            <option value = "bass"> Baixo </option>
+          </select>
+        </form>
+<br/><br/><br/>
+
+        <hr class = "hr-text" data-content = "Caixa Input de Arquivos">
+<br/>
+        <form action = "#" method = "post">
+          <p>Envie sua música no formato MP3:</p>
+          <input type = "file" name = "user-song" /><br/><br/>
+          <input type = "submit" value = "Upload" />
+        </form>
+<br/>
+
+        <hr class = "hr-text" data-content = "Botão Enviar">
+<br/><br/>
+        <form action = "#">
+          <p>Inscreva-se em nossa lista de e-mail:
+            <input type = "text" name = "email" />
+            <input type = "submit" name = "subscribe" value = "Subscribe" />
+          </p>
+        </form>
+<br/><br/><br/>
+
+        <hr class = "hr-text" data-content = "Botão com Imagem">
+<br/>
+        <form action = "#">
+          <p>Inscreva-se em nossa lista de e-mail:</p>
+          <input type = "text" name = "email" />
+          <input type = "image" src = "images/subscribe.jpg" width = "100" height = "20" />
+        </form>
+<br/><br/>
+
+        <hr class = "hr-text" data-content = "Botão e Controles Ocultos">
+<br/><br/><br/>
+        <form action = "#">
+          <button><img src = "images / add.gif" alt = "add" width = "10" height = "10" /> Adicionar </button>
+          <input type = "hidden" name = "bookmark" value = "lyrics" />
+        </form>
+<br/><br/><br/><br/>
+
+        <hr class = "hr-text" data-content = "Rotulando Controles do Formulário">
+<br/><br/><br/><br/><br/>
+        <form action = "#">
+          <label> Idade: <input type = "text" name = "age" /></label>
+          <br/>
+          Gênero:
+          <input id = "female" type = "radio" name = "gender" value = "f">
+          <label for = "female"> Feminino </label>
+          <input id = "male" type = "radio" name = "gender" value = "m">
+          <label for = "male"> Masculino </label>
+        </form>
+<br/><br/><br/><br/><br/>
+
+        <hr class = "hr-text" data-content = "Elementos do Formulário de Agrupamento">
+<br/>
+        <form action = "#">
+          <fieldset>
+            <legend> Detalhes de contato </legend>
+            <label> Email: <br/> <input type = "text" name = "email" /></label><br/>
+            <label> Celular: <br/> <input type = "text" name = "mobile" /></label><br/>
+            <label> Telefone: <br/> <input type = "text" name = "telephone" /></label>
+          </fieldset>
+        </form>
+<br/>
+
+        <hr class = "hr-text" data-content = "Validação do Formulário com HTML5">
+<br/><br/><br/><br/>
+        <form action = "#" method = "post">
+          <label for = "username"> Nome de usuário: </label>
+          <input type = "text" name = "username" id = "username" required = "required" />
+          <br/> <br/>
+          <label for = "password"> Senha: </label>
+          <input type = "password" name = "password" id = "password" required = "required" />
+          <br/> <br/>
+          <input type = "submit" value = "Enviar" />
+        </form>
+<br/><br/><br/><br/>
+
+        <hr class = "hr-text" data-content = "Input de Data em HTML5">
+<br/><br/><br/>
+        <form action = "#" method = "post">
+          <label for = "username"> Data de partida: </label>
+          <input type = "date" name = "depart" />
+          <input type = "submit" value = "Enviar" />
+        </form>
+<br/><br/><br/>
+
+        <hr class = "hr-text" data-content = "Input de Email em HTML5">
+<br/><br/>
+        <form action = "#">
+          <p>Insira seu endereço de e-mail:
+            <input type = "email" name = "email" />
+            <input type = "submit" value = "Enviar" />
+          </p>
+        </form>
+<br/><br/><br/>
+
+        <hr class = "hr-text" data-content = "URL Input em HTML5">
+<br/><br/><br/>
+        <form action = "#">
+          <p>Insira o endereço do seu site:
+            <input type = "url" name = "website" />
+            <input type = "submit" value = "Enviar" />
+          </p>
+        </form>
+<br/><br/><br/>
+
+        <hr class = "hr-text" data-content = "Search Input em HTML5">
+<br/><br/><br/>
+        <form action = "#">
+          <p>Pesquisar:
+            <input type = "search" name = "search" />
+            <input type = "submit" value = "Buscar" />
+          </p>
+        </form>
+<br/><br/><br/>
+
+        <hr class = "hr-text" data-content = "Placeholder em HTML5">
+<br/><br/>
+        <form action = "#">
+          Pesquisar:
+          <input type = "search" name = "search" placeholder = "Digite a pesquisa" />
+          <input type = "submit" value = "Buscar" />
+        </form>
+<br/><br/><br/>
+      </div>
+    </div>
+    <script src="https://rawcdn.githack.com/EddBacelar/LinksCodes/98866f6551bd115f0fc855b7dcb9fdc15206c9a4/prism.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exemplo de Vídeo e Áudio em HTML</title>
+    <link rel="icon" href="../images/icon.png">
+    <link href="../css/prism.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div id="floting">
+      <h3><a href="../index.html#back"><u>VOLTAR </u></a><h3>
+    </div>
+
+    <div id="direita">
+      <h3 class="dif"> Código HTML </h3>
+      <pre><code class="language-html">&lt;!-- Vídeo --&gt;
+&lt;hr class="hr-text" data-content=""&gt;
+&lt;video src="video/video.mp4" width="400" height="300" preload
+       poster="http://www.nyan.cat/cats/original.gif" controls loop&gt;
+ &lt;p&gt;Um vídeo do gato nyan&lt;/p&gt;
+&lt;/video&gt;
+
+
+
+
+
+
+
+
+
+&lt;!-- Vídeo do Youtube --&gt;
+&lt;iframe width="500" height="350"
+        src="https://www.youtube.com/embed/QH2-TGUlwu4"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;
+        &lt;p&gt;Um vídeo do gato nyan do Youtube&lt;/p&gt;
+&lt;/iframe&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;!-- Áudio --&gt;
+&lt;audio src="http://www.nyan.cat/music/original.mp3" controls&gt;
+ &lt;p&gt;Este navegador não é compatível com nosso formato de áudio.&lt;/p&gt;
+&lt;/audio&gt;</code></pre>
+    </div>
+
+    <div id="esquerda">
+      <h3 class="dif"> Resultado </h3>
+      <div class="coluna">
+
+        <hr class="hr-text" data-content="Vídeo">
+        <video src="video/video.mp4" poster="http://www.nyan.cat/cats/original.gif"
+              width="400" height="300" preload controls loop>
+			     <p>Um vídeo do Nyan Cat</p>
+		    </video>
+
+        <hr class="hr-text" data-content="Vídeo do Youtube">
+        <iframe width="500" height="350" src="https://www.youtube.com/embed/QH2-TGUlwu4"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <p>Um vídeo do gato nyan do Youtube</p>
+        </iframe>
+
+        <hr class="hr-text" data-content="Áudio">
+        <audio src="http://www.nyan.cat/music/original.mp3" controls>
+			    <p>Este navegador não é compatível com nosso formato de áudio.</p>
+		    </audio>
+        <br/><br/>
+
+      </div>
+    </div>
+    <script src="https://rawcdn.githack.com/EddBacelar/LinksCodes/98866f6551bd115f0fc855b7dcb9fdc15206c9a4/prism.js"></script>
+  </body>
+</html>
